@@ -1,0 +1,4 @@
+#!/bin/bash
+
+hugo server -t '../../slim-alx-extended' --buildDrafts --watch --disableFastRender
+

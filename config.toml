@@ -1,0 +1,20 @@
+baseURL = "https://ru.alxschwarz.com/"
+title = "ΔΛΞΧ RU"
+[indexes]
+   tag = "tags"
+
+[params]
+  #Subtitle = "Your site's subtitle/tagline"
+  GithubID = "alexfinn"
+  TwitterID = "alxschwarz"
+  AnalyticsID = "5379d5ebe32bb402be001a01"
+  DisqusShortname = "Your Disqus shortname"
+  Summary = false  # takes true or false
+  Content = false  # takes true or false
+  # if both are set to true, summary is shown.
+  # FooterMsg = "Copyright Me 2016. Powered by Hugo."
+
+staticDir = ["static"]
+
+[permalinks]
+  post = "/:slug/"
