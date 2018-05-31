@@ -33,11 +33,15 @@ tags:
 Итак, напомню вкратце, если кто подзабыл.
 Смотрим PID приложения:
 
-`pidof <app-name>`
+```
+pidof <app-name>
+```
 
 Смотрим, какие файлы открыты приложением с этим PID:
 
-`ls -l /proc/<PID>/fd`
+```
+ls -l /proc/<PID>/fd
+```
 
 И видим, что файлы логов были удалены:
 
@@ -56,25 +60,35 @@ lrwxrwxrwx 1 user group      61 May 29 08:32 server.WARNING -> server.log.WARNIN
 
 Самый простой способ вернуть удаленный файл - просто скопировать в нужное место, например, файл `INFO`:
 
-`cp /proc/<PID>/fd/4 > /tmp/restored_info`
+```
+cp /proc/<PID>/fd/4 > /tmp/restored_info
+```
 
 Или даже на его место, где он раньше был:
 
-`cp /proc/<PID>/fd/4 > /var/log/server.log.INFO.20180529-083134.4995`
+```
+cp /proc/<PID>/fd/4 > /var/log/server.log.INFO.20180529-083134.4995
+```
 
 Отлично. Файл восстановили, только вот приложение продолжает работать, а в восстановленный файл уже не пишет :(
 
 Честно скажу, нормального (на мой взгляд) решения я не нашел, только несколько костыльное. А именно: читать из дескриптора и писать в нужный файл:
 
-`tail -c+1 -f --pid=<PID> /proc/<PID>/fd/<FD> > /var/log/server.log.INFO.20180529-083134.4995`
+```
+tail -c+1 -f --pid=<PID> /proc/<PID>/fd/<FD> > /var/log/server.log.INFO.20180529-083134.4995
+```
 
 Проверить можно обычным образом:
 
-`tail -f /var/log/server.log.INFO.20180529-083134.4995`
+```
+tail -f /var/log/server.log.INFO.20180529-083134.4995
+```
 
 или
 
-`tail -f /var/log/server.INFO`
+```
+tail -f /var/log/server.INFO
+```
 
 Немного про опции для `tail`:
 
@@ -82,5 +96,3 @@ lrwxrwxrwx 1 user group      61 May 29 08:32 server.WARNING -> server.log.WARNIN
 - `--pid=<PID>`: самая интересная часть. Вместе с `-f` завершит работу `tail` после того, как процесс с указанным `PID` умрет.
 
 Лучше, конечно, запускать это в `screen` или `tmux`.
-
-
