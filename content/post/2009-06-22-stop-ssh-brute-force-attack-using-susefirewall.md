@@ -17,16 +17,16 @@ url: /2009/06/stop-ssh-brute-force-attack-using-susefirewall
 
 Отредактируйте **_/etc/sysconfig/SuSEfirewall2_**:
 
-#здесь не надо открывать порт для ssh
+здесь не надо открывать порт для ssh
 
 		FW_SERVICES_EXT_TCP=""
 		FW_CONFIGURATIONS_EXT=""
 
-#добавьте это правило:
+добавьте это правило:
 
 		FW_SERVICES_ACCEPT_EXT="0.0.0.0/0,tcp,22,,hitcount=3,blockseconds=60,recentname=ssh"
 
-#перезапустите файерволл:
+перезапустите файерволл:
 
 		rcSuSEfirewall2 restart
 
