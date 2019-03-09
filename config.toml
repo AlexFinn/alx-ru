@@ -1,7 +1,8 @@
 baseURL = "https://ru.alxschwarz.com/"
 title = "ΔΛΞΧ RU"
+
 [indexes]
-   tag = "tags"
+  tag = "tags"
 
 [params]
   #Subtitle = "Your site's subtitle/tagline"
