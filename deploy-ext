@@ -1,3 +1,0 @@
-#!/bin/bash
-
-hugo -t '../../slim-alx-extended' && rsync -avz --delete public/ sw01:/srv/www/alx-ru/
