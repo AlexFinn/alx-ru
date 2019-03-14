@@ -7,11 +7,10 @@ tags:
 - network
 - translate
 comments: false
-date: 2010-01-18T15:41:20Z
+date: 2010-01-18
 published: true
-title: '[RH Knowledgebase] Сетевой трафик приводит к панике ядра на ядре Red Hat Enterprise
-  Slug: rh-knowledgebase-сетевой-трафик-приводит-к-панике-ядра-на-ядре-red-hat-enterprise
-Linux 5.4 Xen'
+title: '[RH Knowledgebase] Сетевой трафик приводит к панике ядра на ядре Red Hat Enterprise Linux'
+Slug: rh-knowledgebase-сетевой-трафик-приводит-к-панике-ядра-на-ядре-red-hat-enterprise
 url: /2010/01/network-traffic-kernel-panic-on-red-hat-enterprise-linux-5-4-xen
 ---
 

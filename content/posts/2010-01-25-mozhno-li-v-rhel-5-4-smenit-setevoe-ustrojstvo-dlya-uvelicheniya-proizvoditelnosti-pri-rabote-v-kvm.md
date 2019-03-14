@@ -10,9 +10,8 @@ tags:
 comments: false
 date: 2010-01-25T11:23:14Z
 published: true
-title: '[RH Knowledgebase] Можно ли в RHEL 5.4 сменить сетевое устройство для увеличения
-  Slug: rh-knowledgebase-можно-ли-в-rhel-54-сменить-сетевое-устройство-для-увеличения
-производительности при работе в KVM'
+title: '[RH Knowledgebase] Можно ли в RHEL 5.4 сменить сетевое устройство для увеличения производительности при работе в KVM'
+Slug: rh-knowledgebase-можно-ли-в-rhel-54-сменить-сетевое-устройство-для-увеличения-производительности-при-работе-в-kvm
 url: /2010/01/mozhno-li-v-rhel-5-4-smenit-setevoe-ustrojstvo-dlya-uvelicheniya-proizvoditelnosti-pri-rabote-v-kvm
 ---
 

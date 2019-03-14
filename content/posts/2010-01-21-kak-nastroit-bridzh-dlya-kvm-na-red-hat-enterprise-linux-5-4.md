@@ -10,9 +10,8 @@ tags:
 comments: false
 date: 2010-01-21T12:02:01Z
 published: true
-title: '[RH Knowledgebase] Как настроить бридж для KVM на Red Hat Enterprise Linux
-  Slug: rh-knowledgebase-как-настроить-бридж-для-kvm-на-red-hat-enterprise-linux
-5.4'
+title: '[RH Knowledgebase] Как настроить бридж для KVM на Red Hat Enterprise Linux 5.4'
+Slug: rh-knowledgebase-как-настроить-бридж-для-kvm-на-red-hat-enterprise-linux-54
 url: /2010/01/kak-nastroit-bridzh-dlya-kvm-na-red-hat-enterprise-linux-5-4
 ---
 
