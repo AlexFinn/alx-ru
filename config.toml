@@ -13,7 +13,7 @@ title = "Alex Feller"
   Summary = false  # takes true or false
   Content = false  # takes true or false
   # if both are set to true, summary is shown.
-  # FooterMsg = "Copyright Me 2016. Powered by Hugo."
+  FooterMsg = "©∆LX 2009-2019"
 
 staticDir = ["static"]
 
