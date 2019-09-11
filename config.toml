@@ -1,10 +1,11 @@
 baseURL = "https://ru.alxschwarz.com/"
-title = "Alex Feller"
+title = "0xC79D7A"
 
 [indexes]
   tag = "tags"
 
 [params]
+  Author = "Alex Feller"
   #Subtitle = "Your site's subtitle/tagline"
   GithubID = "alexfinn"
   TwitterID = "alxschwarz"
